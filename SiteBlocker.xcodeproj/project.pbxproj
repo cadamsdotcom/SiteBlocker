@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 90;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -49,14 +49,12 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		EA0FAF282086793B0000E72D /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
 			dstPath = "";
-			dstSubfolderSpec = 13;
+			dstSubfolder = PlugIns;
 			files = (
 				EA0FAF242086793B0000E72D /* Blocker.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -87,31 +85,23 @@
 /* Begin PBXFrameworksBuildPhase section */
 		EA0FAEE0208668760000E72D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		EA0FAEF7208668780000E72D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		EA0FAF02208668780000E72D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		EA0FAF182086793B0000E72D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
@@ -251,8 +241,6 @@
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			name = Blocker;
 			productName = Blocker;
 			productReference = EA0FAF1B2086793B0000E72D /* Blocker.appex */;
@@ -299,7 +287,6 @@
 				};
 			};
 			buildConfigurationList = EA0FAEDE208668760000E72D /* Build configuration list for PBXProject "SiteBlocker" */;
-			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -307,6 +294,7 @@
 				Base,
 			);
 			mainGroup = EA0FAEDA208668760000E72D;
+			preferredProjectObjectVersion = 90;
 			productRefGroup = EA0FAEE4208668760000E72D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -322,74 +310,58 @@
 /* Begin PBXResourcesBuildPhase section */
 		EA0FAEE1208668760000E72D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				EAD4756E2096A69300F651A0 /* FirstLaunchURLs.plist in Resources */,
 				EA0FAEF4208668780000E72D /* LaunchScreen.storyboard in Resources */,
 				EA0FAEF1208668780000E72D /* Assets.xcassets in Resources */,
 				EA0FAEEC208668760000E72D /* Main.storyboard in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		EA0FAEF8208668780000E72D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		EA0FAF03208668780000E72D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		EA0FAF192086793B0000E72D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				EA0FAF1E2086793B0000E72D /* blockerList.json in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EA0FAEDF208668760000E72D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				EA0FAEE9208668760000E72D /* TableViewController.swift in Sources */,
 				EA0FAEEF208668760000E72D /* SiteBlocker.xcdatamodeld in Sources */,
 				EA0FAEE7208668760000E72D /* AppDelegate.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		EA0FAEF6208668780000E72D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				EA0FAEFF208668780000E72D /* SiteBlockerTests.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		EA0FAF01208668780000E72D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				EA0FAF0A208668780000E72D /* SiteBlockerUITests.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		EA0FAF172086793B0000E72D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				EA0FAF202086793B0000E72D /* ContentBlockerRequestHandler.swift in Sources */,
 				EA7666FF208E7F17006DBB61 /* SiteBlocker.xcdatamodeld in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
@@ -431,7 +403,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		EA0FAF0C208668780000E72D /* Debug */ = {
+		EA0FAF0C208668780000E72D /* Debug configuration for PBXProject "SiteBlocker" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -491,7 +463,7 @@
 			};
 			name = Debug;
 		};
-		EA0FAF0D208668780000E72D /* Release */ = {
+		EA0FAF0D208668780000E72D /* Release configuration for PBXProject "SiteBlocker" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -545,7 +517,7 @@
 			};
 			name = Release;
 		};
-		EA0FAF0F208668780000E72D /* Debug */ = {
+		EA0FAF0F208668780000E72D /* Debug configuration for PBXNativeTarget "SiteBlocker" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -555,18 +527,23 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J4NK4HMU2T;
 				INFOPLIST_FILE = SiteBlocker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cadams.SiteBlocker;
+				PRODUCT_BUNDLE_IDENTIFIER = cadams.Site.Blocker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
-		EA0FAF10208668780000E72D /* Release */ = {
+		EA0FAF10208668780000E72D /* Release configuration for PBXNativeTarget "SiteBlocker" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -576,18 +553,23 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J4NK4HMU2T;
 				INFOPLIST_FILE = SiteBlocker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cadams.SiteBlocker;
+				PRODUCT_BUNDLE_IDENTIFIER = cadams.Site.Blocker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
-		EA0FAF12208668780000E72D /* Debug */ = {
+		EA0FAF12208668780000E72D /* Debug configuration for PBXNativeTarget "SiteBlockerTests" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -608,7 +590,7 @@
 			};
 			name = Debug;
 		};
-		EA0FAF13208668780000E72D /* Release */ = {
+		EA0FAF13208668780000E72D /* Release configuration for PBXNativeTarget "SiteBlockerTests" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -629,7 +611,7 @@
 			};
 			name = Release;
 		};
-		EA0FAF15208668780000E72D /* Debug */ = {
+		EA0FAF15208668780000E72D /* Debug configuration for PBXNativeTarget "SiteBlockerUITests" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -649,7 +631,7 @@
 			};
 			name = Debug;
 		};
-		EA0FAF16208668780000E72D /* Release */ = {
+		EA0FAF16208668780000E72D /* Release configuration for PBXNativeTarget "SiteBlockerUITests" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -669,10 +651,11 @@
 			};
 			name = Release;
 		};
-		EA0FAF262086793B0000E72D /* Debug */ = {
+		EA0FAF262086793B0000E72D /* Debug configuration for PBXNativeTarget "Blocker" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Blocker/Blocker.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J4NK4HMU2T;
 				INFOPLIST_FILE = Blocker/Info.plist;
@@ -681,15 +664,16 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cadams.SiteBlocker.Blocker;
+				PRODUCT_BUNDLE_IDENTIFIER = cadams.Site.Blocker.Blocker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		EA0FAF272086793B0000E72D /* Release */ = {
+		EA0FAF272086793B0000E72D /* Release configuration for PBXNativeTarget "Blocker" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Blocker/Blocker.entitlements;
@@ -701,7 +685,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cadams.SiteBlocker.Blocker;
+				PRODUCT_BUNDLE_IDENTIFIER = cadams.Site.Blocker.Blocker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -715,46 +699,41 @@
 		EA0FAEDE208668760000E72D /* Build configuration list for PBXProject "SiteBlocker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EA0FAF0C208668780000E72D /* Debug */,
-				EA0FAF0D208668780000E72D /* Release */,
+				EA0FAF0C208668780000E72D /* Debug configuration for PBXProject "SiteBlocker" */,
+				EA0FAF0D208668780000E72D /* Release configuration for PBXProject "SiteBlocker" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		EA0FAF0E208668780000E72D /* Build configuration list for PBXNativeTarget "SiteBlocker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EA0FAF0F208668780000E72D /* Debug */,
-				EA0FAF10208668780000E72D /* Release */,
+				EA0FAF0F208668780000E72D /* Debug configuration for PBXNativeTarget "SiteBlocker" */,
+				EA0FAF10208668780000E72D /* Release configuration for PBXNativeTarget "SiteBlocker" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		EA0FAF11208668780000E72D /* Build configuration list for PBXNativeTarget "SiteBlockerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EA0FAF12208668780000E72D /* Debug */,
-				EA0FAF13208668780000E72D /* Release */,
+				EA0FAF12208668780000E72D /* Debug configuration for PBXNativeTarget "SiteBlockerTests" */,
+				EA0FAF13208668780000E72D /* Release configuration for PBXNativeTarget "SiteBlockerTests" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		EA0FAF14208668780000E72D /* Build configuration list for PBXNativeTarget "SiteBlockerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EA0FAF15208668780000E72D /* Debug */,
-				EA0FAF16208668780000E72D /* Release */,
+				EA0FAF15208668780000E72D /* Debug configuration for PBXNativeTarget "SiteBlockerUITests" */,
+				EA0FAF16208668780000E72D /* Release configuration for PBXNativeTarget "SiteBlockerUITests" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		EA0FAF252086793B0000E72D /* Build configuration list for PBXNativeTarget "Blocker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EA0FAF262086793B0000E72D /* Debug */,
-				EA0FAF272086793B0000E72D /* Release */,
+				EA0FAF262086793B0000E72D /* Debug configuration for PBXNativeTarget "Blocker" */,
+				EA0FAF272086793B0000E72D /* Release configuration for PBXNativeTarget "Blocker" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
