@@ -17,7 +17,7 @@
 		EA0FAF0A208668780000E72D /* SiteBlockerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0FAF09208668780000E72D /* SiteBlockerUITests.swift */; };
 		EA0FAF1E2086793B0000E72D /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = EA0FAF1D2086793B0000E72D /* blockerList.json */; };
 		EA0FAF202086793B0000E72D /* ContentBlockerRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0FAF1F2086793B0000E72D /* ContentBlockerRequestHandler.swift */; };
-		EA0FAF242086793B0000E72D /* Blocker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EA0FAF1B2086793B0000E72D /* Blocker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EA0FAF242086793B0000E72D /* Blocker.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = EA0FAF1B2086793B0000E72D /* Blocker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		EA7666FF208E7F17006DBB61 /* SiteBlocker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA0FAEED208668760000E72D /* SiteBlocker.xcdatamodeld */; };
 		EAD4756E2096A69300F651A0 /* FirstLaunchURLs.plist in Resources */ = {isa = PBXBuildFile; fileRef = EAD4756D2096A69300F651A0 /* FirstLaunchURLs.plist */; };
 /* End PBXBuildFile section */
@@ -47,14 +47,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		EA0FAF282086793B0000E72D /* Embed App Extensions */ = {
+		EA0FAF282086793B0000E72D /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			dstPath = "";
 			dstSubfolder = PlugIns;
 			files = (
-				EA0FAF242086793B0000E72D /* Blocker.appex in Embed App Extensions */,
+				EA0FAF242086793B0000E72D /* Blocker.appex in Embed Foundation Extensions */,
 			);
-			name = "Embed App Extensions";
+			name = "Embed Foundation Extensions";
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -183,7 +183,7 @@
 				EA0FAEDF208668760000E72D /* Sources */,
 				EA0FAEE0208668760000E72D /* Frameworks */,
 				EA0FAEE1208668760000E72D /* Resources */,
-				EA0FAF282086793B0000E72D /* Embed App Extensions */,
+				EA0FAF282086793B0000E72D /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -252,8 +252,9 @@
 		EA0FAEDB208668760000E72D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1640;
 				ORGANIZATIONNAME = cadams;
 				TargetAttributes = {
 					EA0FAEE2208668760000E72D = {
@@ -429,6 +430,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -438,8 +440,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = J4NK4HMU2T;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -454,7 +458,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -489,6 +493,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -498,8 +503,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = J4NK4HMU2T;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -508,7 +515,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -520,12 +527,10 @@
 		EA0FAF0F208668780000E72D /* Debug configuration for PBXNativeTarget "SiteBlocker" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = SiteBlocker/SiteBlocker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J4NK4HMU2T;
 				INFOPLIST_FILE = SiteBlocker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -546,12 +551,10 @@
 		EA0FAF10208668780000E72D /* Release configuration for PBXNativeTarget "SiteBlocker" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = SiteBlocker/SiteBlocker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J4NK4HMU2T;
 				INFOPLIST_FILE = SiteBlocker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -572,10 +575,8 @@
 		EA0FAF12208668780000E72D /* Debug configuration for PBXNativeTarget "SiteBlockerTests" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J4NK4HMU2T;
 				INFOPLIST_FILE = SiteBlockerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -593,10 +594,8 @@
 		EA0FAF13208668780000E72D /* Release configuration for PBXNativeTarget "SiteBlockerTests" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J4NK4HMU2T;
 				INFOPLIST_FILE = SiteBlockerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -614,9 +613,7 @@
 		EA0FAF15208668780000E72D /* Debug configuration for PBXNativeTarget "SiteBlockerUITests" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J4NK4HMU2T;
 				INFOPLIST_FILE = SiteBlockerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -634,9 +631,7 @@
 		EA0FAF16208668780000E72D /* Release configuration for PBXNativeTarget "SiteBlockerUITests" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J4NK4HMU2T;
 				INFOPLIST_FILE = SiteBlockerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -657,7 +652,6 @@
 				CODE_SIGN_ENTITLEMENTS = Blocker/Blocker.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J4NK4HMU2T;
 				INFOPLIST_FILE = Blocker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -679,7 +673,6 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Blocker/Blocker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J4NK4HMU2T;
 				INFOPLIST_FILE = Blocker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
